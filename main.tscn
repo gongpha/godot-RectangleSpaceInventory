@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://inventory.gd" type="Script" id=1]
+[ext_resource path="res://main.gd" type="Script" id=2]
+
+[node name="con" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inventory" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="add_ammo" type="Button" parent="."]
+margin_left = 14.0
+margin_top = 256.0
+margin_right = 101.0
+margin_bottom = 276.0
+text = "Add Ammo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="add_gun" type="Button" parent="."]
+margin_left = 115.0
+margin_top = 256.0
+margin_right = 202.0
+margin_bottom = 276.0
+text = "Add Gun"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rot" type="CheckBox" parent="."]
+margin_left = 219.923
+margin_top = 252.958
+margin_right = 243.923
+margin_bottom = 276.958
+text = "Allow Rotating"
+__meta__ = {
+"_edit_use_anchors_": false
+}
